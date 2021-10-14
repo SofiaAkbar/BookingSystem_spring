@@ -63,20 +63,32 @@ public class DataLoader implements ApplicationRunner {
 
         Booking booking1 = new Booking("20-10-21", python, jack);
         bookingRepository.save(booking1);
+        jack.addBooking(booking1);
+        python.addBooking(booking1);
 
         Booking booking2 = new Booking("21-10-21", java, jill);
         bookingRepository.save(booking2);
+        jill.addBooking(booking2);
+        java.addBooking(booking2);
 
         Booking booking3 = new Booking("22-11-21", photoShop, ben);
         bookingRepository.save(booking3);
+        ben.addBooking(booking3);
+        photoShop.addBooking(booking3);
 
         Booking booking4 = new Booking("23-10-21", animation, lilly);
         bookingRepository.save(booking4);
+        lilly.addBooking(booking4);
+        animation.addBooking(booking4);
 
         Booking booking5 = new Booking("24-11-21", webDev, nick);
         bookingRepository.save(booking5);
+        nick.addBooking(booking5);
+        webDev.addBooking(booking5);
 
-        
+
+
+
     }
 
 
